@@ -14,7 +14,7 @@ Add your earlier utility script from Module 1 to your project repo.
 
 - GitHub Repository:  **datafun-02-project-setup**
 - Documentation:      README.md
-- New Script:         **yourname_projsetup.py**
+- New Script:         **yourname_project_setup.py**
 - Utils Script:       **yourname_utils.py**
 
 ## Objective
@@ -43,10 +43,13 @@ Import each package just once near the top of the file.
 Python import code example:
 
 ```python
-import math
-import statistics
+import pathlib
 import stellar_analytics_utils
 ```
+
+Note: if we use "import pathlib" as shown, we must use "pathlib.Path" when working with a Path. 
+Many other projects use "from pathlib import Path". 
+When using this approach, you omit the initial pathlib in pathlib.Path, and just use Path.
 
 ### 3. Define Functions for Folder Creation
 
