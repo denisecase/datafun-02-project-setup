@@ -1,4 +1,15 @@
-''' This module provides functions for creating a series of project folders. '''
+"""
+Module: case_project_setup
+
+Purpose: Provide functions to script project folders (and domonstrate basic Python coding skills).
+
+Description: This module provides functions for creating a series of project folders.
+
+Author: Denise Case
+
+TODO: Change the module name in this opening docstring
+TODO: Change the author in this opening docstring
+"""
 
 #####################################
 # Import Modules at the Top
