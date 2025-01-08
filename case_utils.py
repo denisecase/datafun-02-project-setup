@@ -1,19 +1,26 @@
-'''  
+"""
+Module: utils_case
 
-Module: Stellar Analytics - Reusable Module for My Data Analytics Projects
+Purpose: Reusable Module for My Analytics Projects
 
-This module provides a simple, reusable foundation for my analytics projects. 
+Description: This module provides a byline for my analytics projects. 
+When we work hard to write useful code, we want it to be reusable.
+A good byline could be used in every Python analytics project we do.
 
-'''
-
-#####################################
-# Import Modules at the Top
-#####################################
-
-import statistics
+Author: Denise Case
+"""
 
 #####################################
-# Declare global variables
+# Import Modules
+#####################################
+
+# Import helpful modules from the Python Standard library
+# See more at: https://docs.python.org/3/library/
+
+import statistics  
+
+#####################################
+# Declare Global Variables
 #####################################
 
 has_international_clients: bool = True
@@ -22,20 +29,10 @@ average_client_satisfaction: float = 4.7
 skills_offered: list = ["Data Analysis", "Machine Learning", "Business Intelligence"]
 client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.7]
 
-#####################################
-# Calculate Basic Statistics
-#####################################
-
-# Calculate basic statistics using built-in functions and the statistics module
 min_score: float = min(client_satisfaction_scores)  
 max_score: float = max(client_satisfaction_scores)  
 mean_score: float = statistics.mean(client_satisfaction_scores)  
 stdev_score: float = statistics.stdev(client_satisfaction_scores)
-
-#####################################
-# Declare a global variable named byline. 
-# Make it a multiline f-string to show our information.
-#####################################
 
 byline: str = f"""
 ---------------------------------------------------------
@@ -47,25 +44,27 @@ Skills Offered:             {skills_offered}
 Client Satisfaction Scores: {client_satisfaction_scores}
 Minimum Satisfaction Score: {min_score}
 Maximum Satisfaction Score: {max_score}
-Mean Satisfaction Score:    {mean_score:.2f}
-Standard Deviation:         {stdev_score:.2f}
+Mean Satisfaction Score: {mean_score:.2f}
+Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
 """
 
 #####################################
-# Define the get_byline() Function
+# Define global functions (resuable instructions)
 #####################################
 
 def get_byline() -> str:
-    '''Return a byline for my analytics projects.'''
+    ''' Get a byline for my analytics projects.'''
     return byline
-   
+
 #####################################
-# Define a main() function for this module.
+# Define main function for this module.
 #####################################
 
 def main() -> None:
-    '''Print results of get_byline() when main() is called.'''
+    ''' Print results of get_byline() when main() is called.'''
+    print("Starting........")
     print(get_byline())
+    print("Complete.......")
 
 #####################################
 # Conditional Execution
