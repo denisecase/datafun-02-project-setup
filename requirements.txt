@@ -154,7 +154,7 @@ loguru
 # TEXT-TO-SPEECH
 # ======================================================
 # Offline text-to-speech library for Python (1-15 MB)
-# pyttsx3  
+pyttsx3  
 
 # ======================================================
 # JUPYTERLAB (OPTIONAL, NEEDED FOR NOTEBOOKS)
