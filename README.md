@@ -7,13 +7,15 @@ Utilities for scripting project folders
 - Git
 - Python 
 
-## Workflow
+## Professional Python Workflow
 
 See [pro-analytics-01](https://github.com/denisecase/pro-analytics-01/)
 
 ## Commands to Manage Virtual Environment
 
-For Windows PowerShell (change if using Mac/Linux)
+For Windows PowerShell (change if using Mac/Linux).
+Verify that all required packages are included in requirements.txt (and have NOT been commented out).
+
 
 ```powershell
 py -m venv .venv
@@ -23,6 +25,8 @@ py -m pip install --upgrade -r requirements.txt
 ```
 
 ## Commands to Run Python Scripts
+
+Remember to activate your .venv (and install packages if they haven't been installed yet) before running files.
 
 TODO: Change these to reflect your Python file names and remove this TODO.
 
@@ -41,8 +45,7 @@ git push -u origin main
 
 ## Reference Projects
 
-Custom implementation of the example reusable Python module project at 
+Custom implementation of the example project at 
 [datafun-02-project-setup](https://github.com/denisecase/datafun-02-project-setup)
 
 - [Module 1 Repo](https://github.com/denisecase/datafun-01-utils/)
-
