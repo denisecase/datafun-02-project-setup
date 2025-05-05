@@ -193,16 +193,28 @@ loguru
 # pyexcel
 
 # ======================================================
-# DATA STORAGE AND RETRIEVAL 
+# DATA STORAGE, TRANSFORMATION, AND ORCHESTRATION
 # ======================================================
 
 # SQLite database support (sqlite3 is built into Python, no install needed)
 
-# DuckDB: A lightweight, serverless database for Python (5-10 MB).
+# DuckDB: A lightweight, serverless OLAP database for Python (5-10 MB).
 # duckdb
 
-# ORM for SQL databases (~10 MB) when sqlite3 is not enough
+# ORM for SQL databases (~10 MB) such as PostgreSQL, MySQL, and SQLite
 # sqlalchemy  
+
+# DBT Core: SQL-based transformation tool (~60-80 MB)
+# dbt-core
+
+# DBT DuckDB Adapter: Allows dbt to run on DuckDB (~20-30 MB)
+# dbt-duckdb
+
+# SQLMesh: Alt. to DBT for declarative data transformations in SQL, Python (~30–50 MB)
+# sqlmesh
+
+# Workflow orchestration for Python tasks (~30-50 MB)
+# prefect>=2.0
 
 # ======================================================
 # DATA ANALYSIS 
